@@ -10,7 +10,7 @@ public class Palindrome {
         sb.reverse();
         String reversed = sb.toString();
 
-        if (reversed.length() > original.length()) {
+        if (reversed.length() != original.length()) {
             return result;
         } else {
 
@@ -30,6 +30,8 @@ public class Palindrome {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the word: ");
         String userInput = input.next();
 
         System.out.println(palindromeCheck(userInput));
